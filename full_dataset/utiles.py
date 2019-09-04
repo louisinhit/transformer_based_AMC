@@ -35,7 +35,7 @@ def gen_list():
     return test_idx, train_idx
 
 
-def gen_test_set(dataset, test_idx):
+def gen_test_set(dataset, test_idx0):
 
     x = h5py.File(dataset, 'r+')
     labels = create_label()
