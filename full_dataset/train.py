@@ -142,4 +142,3 @@ if __name__ == "__main__":
     for epoch in range(1, epochs+1):
         train(epoch)
         test()
-        torch.save(model, os.path.join(base_path, 'saved_model/') + 'r_' + model_name + '.pt')
