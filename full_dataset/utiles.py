@@ -54,11 +54,6 @@ def gen_test_set(dataset, test_idx0):
 
     test_set = utils.TensorDataset(data_test, label_test)
 
-    f= open("test_idx.txt","w+")
-    for a in test_idx:
-        f.write("%f\n" % a)
-    f.close()
-
     return test_set
 
 
